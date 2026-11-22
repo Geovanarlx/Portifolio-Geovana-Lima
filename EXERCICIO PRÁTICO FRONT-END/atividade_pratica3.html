@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de Serviços</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        #header {
+            background-color: #7a247e;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        #content {
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #7a247e;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        #footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+    <h1>Serviços de Software</h1>
+    <p>Lista de Serviços Disponíveis</p>
+    </div>
+    <div id="content">
+        <table border="1">
+        <thead>
+            <tr>
+                <th>Código</th>
+                <th>Serviço de Software</th>
+                <th>Prazo Estimado</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>001</td>
+                <td>Desenvolvimento Front-End Web</td>
+                <td>15 dias</td>
+                <td>Em andamento</td>
+            </tr>
+            <tr>
+                <td>002</td>
+                <td>Refatoração de Interface e Layout</td>
+                <td>7 dias</td>
+                <td>Planejado</td>
+            </tr>
+            <tr>
+                <td>003</td>
+                <td>Integração de Estilos com CSS3</td>
+                <td>10 dias</td>
+                <td>Concluído</td>
+            </tr>
+        </tbody>
+        </table>
+    </div>
+
+    <div id="footer">
+        <p>© 2026 Serviços de Software. Todos os direitos reservados. Sistema criado para fins educacionais.</p>
+    </div>
+</body>
+</html>
