@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#17131d" />
+    <meta name="theme-color" content="#17131d" id="theme-color" />
     <meta name="description" content="Portfólio de Geovana Rogério Lima, estudante de Engenharia de Software com interesse em qualidade de software e desenvolvimento." />
     <title>Geovana Rogério Lima — Portfólio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -17,12 +17,9 @@
     <div class="page-shell">
       <header class="site-header">
         <a class="brand" href="#inicio" aria-label="Geovana Rogério Lima, início">
-          <span class="brand-mark">G<span>.</span></span>
+          <img class="brand-mark" src="img/monograma-grl.svg" alt="" width="44" height="44" />
           <span class="brand-name">Geovana Rogério Lima</span>
         </a>
-        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menu">
-          <span></span><span></span>
-        </button>
         <nav class="site-nav" id="site-nav" aria-label="Navegação principal">
           <a href="#sobre">Sobre</a>
           <a href="#trajetoria">Trajetória</a>
@@ -30,6 +27,13 @@
           <a href="#habilidades">Habilidades</a>
           <a class="nav-contact" href="#contato">Vamos conversar <span aria-hidden="true">↗</span></a>
         </nav>
+        <div class="header-actions">
+          <button class="theme-toggle" type="button" aria-label="Ativar tema claro" title="Ativar tema claro">
+            <svg class="theme-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg>
+            <svg class="theme-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.3 15.3A8.5 8.5 0 0 1 8.7 3.7 8.5 8.5 0 1 0 20.3 15.3Z"/><path d="M16.5 4.5v3m-1.5-1.5h3"/></svg>
+          </button>
+          <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menu"><span></span><span></span></button>
+        </div>
       </header>
 
       <main id="conteudo">
@@ -48,7 +52,7 @@
             <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
             <div class="art-cross cross-one">+</div><div class="art-cross cross-two">+</div>
             <div class="art-caption caption-top">PORTFÓLIO PESSOAL<br />EDIÇÃO 2026</div>
-            <div class="monogram-card"><span class="monogram">G<span>R</span></span><span class="monogram-rule"></span><span class="monogram-name">GEOVANA<br />ROGÉRIO LIMA</span></div>
+            <div class="monogram-card"><img class="monogram-emblem" src="img/monograma-grl.svg" alt="Monograma GRL de Geovana Rogério Lima" width="148" height="148" /><span class="monogram-rule"></span><span class="monogram-name">GEOVANA<br />ROGÉRIO LIMA</span></div>
             <div class="art-caption caption-bottom">APRENDER · PRATICAR · EVOLUIR</div>
             <span class="art-index">01 — 04</span>
           </div>
@@ -79,14 +83,17 @@
           <div class="projects-heading"><h2 id="projetos-title">Aprendizado<br />em <em>movimento.</em></h2><p>Projetos acadêmicos e estudos que mostram meu progresso. Esta seção vai crescer junto com minha prática e meus próximos commits.</p></div>
           <article class="project-card">
             <div class="project-visual" aria-hidden="true"><div class="visual-grid"></div><div class="library-window"><div class="window-bar"><i></i><i></i><i></i><span>Biblioteca / painel</span></div><div class="library-layout"><div class="library-side"><b>CATÁLOGO</b><i></i><i></i><i></i></div><div class="library-main"><span class="library-kicker">SISTEMA DE BIBLIOTECA</span><strong>Conhecimento<br />em circulação.</strong><div class="book-row"><i></i><i></i><i></i></div></div></div></div><span class="visual-label">PROJETO ACADÊMICO · 2026</span></div>
-            <div class="project-info"><div class="project-index">01 <span>—</span> ANÁLISE &amp; REQUISITOS</div><h3>Sistema de Gestão de Biblioteca</h3><p>Projeto acadêmico desenvolvido em grupo para a disciplina de Análise e Requisitos de Sistemas. Minha contribuição nesta etapa incluiu protótipos de interface e diagramas de sequência para consulta ao catálogo, empréstimo e devolução.</p><div class="project-tools"><span>Prototipação</span><span>UML</span><span>Requisitos</span></div><details class="project-details"><summary>Ver o que aprendi <span aria-hidden="true">＋</span></summary><p>Organizar requisitos funcionais, conectar fluxos de uso às telas e representar interações entre pessoas e componentes do sistema. O projeto continua em evolução com a equipe.</p></details><span class="project-status"><span class="status-dot"></span> EM DESENVOLVIMENTO</span></div>
+            <div class="project-info"><div class="project-index">01 <span>—</span> ANÁLISE, DADOS &amp; UML</div><h3>Sistema de Gestão de Biblioteca</h3><p>Projeto acadêmico em grupo para a disciplina de Análise e Requisitos de Sistemas. Trabalhei em protótipos de interface e diagramas de sequência para catálogo, empréstimos e devoluções.</p><div class="project-tools"><span>Prototipação</span><span>UML</span><span>Modelo de dados</span><span>Requisitos</span></div><details class="project-details"><summary>Ver o que aprendi <span aria-hidden="true">＋</span></summary><p>Relacionar requisitos e regras de negócio a fluxos de uso, telas e entidades do sistema, documentando decisões para orientar as próximas etapas do projeto.</p></details><span class="project-status"><span class="status-dot"></span> PROJETO ACADÊMICO</span></div>
           </article>
           <div class="project-mini-grid" aria-label="Outros projetos e experimentos">
             <article class="mini-project"><div class="mini-project-art art-chat"><span>FURIA<span class="art-asterisk">✳</span></span><small>CHAT WEB</small></div><div class="mini-project-body"><p class="project-index">02 <span>—</span> FRONT END</p><h3>ChatBot FURIA</h3><p>Chat web com respostas pré-programadas sobre a organização FURIA e o time de Counter-Strike. Projeto em evolução, com integração a dados e IA como próximos passos planejados.</p><div class="mini-links"><a href="https://warm-sprinkles-a7e92b.netlify.app/" target="_blank" rel="noreferrer">Ver demonstração ↗</a><a href="https://github.com/Geovanarlx/ChatBot-Furia" target="_blank" rel="noreferrer">Ver código ↗</a></div><div class="project-tools"><span>HTML</span><span>CSS</span><span>JavaScript</span></div></div></article>
             <article class="mini-project"><div class="mini-project-art art-xdevs"><span class="xdevs-symbol">X</span><span class="xdevs-cards"><i></i><i></i><i></i></span><small>PERSONAGENS · CARDS · INTERAÇÃO</small></div><div class="mini-project-body"><p class="project-index">03 <span>—</span> INTERFACE WEB</p><h3>XDEVS</h3><p>Vitrine interativa de personagens fictícios, com descrições, habilidades, imagens, responsividade e animações simples.</p><div class="mini-links"><a href="https://geovanarlx.github.io/projeto-xdevs/" target="_blank" rel="noreferrer">Abrir projeto ↗</a><a href="https://github.com/Geovanarlx/projeto-xdevs" target="_blank" rel="noreferrer">Ver código ↗</a></div><div class="project-tools"><span>HTML</span><span>CSS</span><span>JavaScript</span></div></div></article>
             <article class="mini-project"><div class="mini-project-art art-learning"><span>LEARN<br /><em>MORE.</em></span><small>LANDING PAGE · ESCOLA DNC</small></div><div class="mini-project-body"><p class="project-index">04 <span>—</span> LANDING PAGE</p><h3>Learning Page</h3><p>Landing page com formulário de contato e carrossel interativo. A responsividade ainda é uma melhoria planejada para a próxima etapa.</p><div class="mini-links"><a href="https://668b55dd350370a346e59e3c--storied-otter-2c3f23.netlify.app/" target="_blank" rel="noreferrer">Ver demonstração ↗</a><a href="https://github.com/Geovanarlx/Projeto-Learning-Page" target="_blank" rel="noreferrer">Ver código ↗</a></div><div class="project-tools"><span>HTML</span><span>CSS</span><span>JavaScript</span></div></div></article>
+            <article class="mini-project"><div class="mini-project-art art-store"><span>CATÁLOGO<br /><em>&amp; ESTOQUE</em></span><small>PROJETO PRIVADO · SISTEMA WEB</small></div><div class="mini-project-body"><p class="project-index">05 <span>—</span> BACK END &amp; DADOS</p><h3>Catálogo digital e estoque</h3><p>Sistema web reservado para um pequeno comércio, com catálogo de produtos, painel administrativo e controle de estoque. Desenvolvido em versões local e hospedada.</p><div class="project-tools"><span>Node.js</span><span>SQLite</span><span>Supabase</span><span>Cloudflare Pages</span></div><p class="project-private-note">Detalhes e repositório mantidos privados.</p></div></article>
+            <article class="mini-project"><div class="mini-project-art art-clock"><span class="clock-face"><i></i><b></b></span><strong>VER · SENTIR · OUVIR</strong><small>ACESSIBILIDADE · APLICAÇÃO FULL STACK</small></div><div class="mini-project-body"><p class="project-index">06 <span>—</span> FULL STACK &amp; ACESSIBILIDADE</p><h3>Relógio visual acessível</h3><p>Aplicação experimental que transforma sons do ambiente em sinais visuais num relógio 3D, com controle de sensibilidade para apoiar pessoas surdas.</p><div class="mini-links"><a href="https://github.com/Geovanarlx/PrototipoRelogio" target="_blank" rel="noreferrer">Ver código ↗</a></div><div class="project-tools"><span>React</span><span>TypeScript</span><span>Web Audio API</span><span>Three.js</span><span>Express</span></div></div></article>
+            <article class="mini-project"><div class="mini-project-art art-python"><span>PDF<br /><em>→ ZIP</em></span><small>AUTOMAÇÃO · DADOS PÚBLICOS</small></div><div class="mini-project-body"><p class="project-index">07 <span>—</span> PYTHON &amp; AUTOMAÇÃO</p><h3>Coletor de anexos da ANS</h3><p>Script que busca links de anexos em uma página pública, baixa arquivos PDF e reúne os documentos em um ZIP.</p><div class="mini-links"><a href="https://github.com/Geovanarlx/Quest-1---python" target="_blank" rel="noreferrer">Ver código ↗</a></div><div class="project-tools"><span>Python</span><span>Requests</span><span>BeautifulSoup</span><span>ZIP</span></div></div></article>
           </div>
-          <div class="project-footnote"><span>EM BREVE</span><p>Novos projetos e estudos serão adicionados aqui conforme forem ganhando forma.</p><span class="footnote-star">✳</span></div>
+          <div class="project-footnote"><span>PROGRESSO</span><p>Projetos em diferentes etapas: estudos, protótipos e aplicações em evolução. Atualizo esta seleção conforme cada entrega avança.</p><span class="footnote-star">✳</span></div>
         </section>
 
         <section class="skills section-wrap section-pad" id="habilidades" aria-labelledby="habilidades-title">
@@ -95,18 +102,19 @@
           <div class="skills-grid">
             <article class="skill-card skill-card-featured"><span class="skill-number">01</span><span class="skill-icon">⌁</span><h3>Qualidade de software</h3><p>Planejar cenários, testar fluxos e comunicar problemas de forma clara.</p><div class="skill-tags"><span>Testes manuais</span><span>Testes funcionais</span><span>Regressão</span><span>Casos de teste</span><span>Playwright</span><span>Selenium</span></div></article>
             <article class="skill-card"><span class="skill-number">02</span><span class="skill-icon">{ }</span><h3>Desenvolvimento</h3><p>Fundamentos de programação e interfaces web.</p><div class="skill-tags"><span>Python</span><span>Java</span><span>JavaScript</span><span>HTML</span><span>CSS</span><span>Lógica</span></div></article>
-            <article class="skill-card"><span class="skill-number">03</span><span class="skill-icon">▦</span><h3>Dados &amp; ferramentas</h3><p>Organização, colaboração e apoio à análise de sistemas.</p><div class="skill-tags"><span>SQL</span><span>MySQL</span><span>Git &amp; GitHub</span><span>Postman</span><span>Jira</span><span>Excel avançado</span></div></article>
+            <article class="skill-card"><span class="skill-number">03</span><span class="skill-icon">▦</span><h3>Dados, APIs &amp; ferramentas</h3><p>Estruturas de dados, integração e colaboração em projetos.</p><div class="skill-tags"><span>SQL</span><span>MySQL</span><span>SQLite</span><span>Supabase</span><span>REST</span><span>Git &amp; GitHub</span><span>Postman</span><span>Jira</span><span>Excel avançado</span></div></article>
             <article class="skill-card"><span class="skill-number">04</span><span class="skill-icon">◈</span><h3>Análise de sistemas</h3><p>Modelar necessidades e transformar requisitos em fluxos compreensíveis.</p><div class="skill-tags"><span>UML</span><span>Requisitos</span><span>Prototipação</span><span>Scrum</span><span>Kanban</span></div></article>
           </div>
           <div class="languages"><span class="eyebrow">IDIOMAS</span><p><strong>Português</strong> Nativo <i></i><strong>Inglês</strong> Intermediário <i></i><strong>Espanhol</strong> Intermediário a avançado</p></div>
         </section>
 
         <section class="contact section-wrap" id="contato" aria-labelledby="contato-title">
-          <div class="contact-orbit" aria-hidden="true"></div><div class="contact-content"><p class="eyebrow">05 / CONTATO</p><h2 id="contato-title">Vamos construir<br />uma boa <em>conversa?</em></h2><p>Estou aberta a oportunidades de estágio, projetos acadêmicos e conexões com pessoas de tecnologia.</p><div class="contact-actions"><a class="button button-light" href="https://github.com/Geovanarlx" target="_blank" rel="noreferrer">Visite meu GitHub <span aria-hidden="true">↗</span></a></div><p class="contact-note">Veja meus projetos e acompanhe minha evolução pelo GitHub.</p></div><span class="contact-stamp">G<span>.</span></span>
+          <div class="contact-orbit" aria-hidden="true"></div><div class="contact-content"><p class="eyebrow">05 / CONTATO</p><h2 id="contato-title">Vamos construir<br />uma boa <em>conversa?</em></h2><p>Estou aberta a oportunidades de estágio, projetos acadêmicos e conexões com pessoas de tecnologia.</p><div class="contact-actions"><a class="button button-light" href="mailto:geovanalimaczs567@gmail.com">Enviar um e-mail <span aria-hidden="true">↗</span></a><a class="contact-social" href="https://www.linkedin.com/in/geovana-lima-bbaa4a351/" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a><a class="contact-social" href="https://github.com/Geovanarlx" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a></div><p class="contact-note">Pode me escrever ou conhecer meu trabalho nas redes profissionais.</p></div><span class="contact-stamp"><img src="img/monograma-grl.svg" alt="" width="128" height="128" /></span>
         </section>
       </main>
 
-      <footer class="site-footer section-wrap"><a class="brand footer-brand" href="#inicio"><span class="brand-mark">G<span>.</span></span><span class="brand-name">Geovana Rogério Lima</span></a><p>Feito com intenção e curiosidade. <span>© <span id="current-year">2026</span> Geovana Rogério Lima</span></p><a class="back-top" href="#inicio">VOLTAR AO TOPO ↑</a></footer>
+      <footer class="site-footer section-wrap"><a class="brand footer-brand" href="#inicio"><img class="brand-mark" src="img/monograma-grl.svg" alt="" width="44" height="44" /><span class="brand-name">Geovana Rogério Lima</span></a><p>Feito com intenção e curiosidade. <span>© <span id="current-year">2026</span> Geovana Rogério Lima</span></p><a class="back-top" href="#inicio">VOLTAR AO TOPO ↑</a></footer>
     </div>
   </body>
 </html>
+
