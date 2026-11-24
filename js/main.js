@@ -24,7 +24,7 @@ const year = document.querySelector("#current-year");
 if (year) year.textContent = new Date().getFullYear();
 
 const revealItems = document.querySelectorAll(
-  ".section-heading, .intro-grid, .facts-row, .timeline-item, .projects-heading, .project-card, .project-footnote, .skills-head, .skill-card, .languages, .contact-content"
+  ".section-heading, .intro-grid, .facts-row, .timeline-item, .projects-heading, .project-card, .mini-project, .project-footnote, .skills-head, .skill-card, .languages, .contact-content"
 );
 
 revealItems.forEach((item) => item.setAttribute("data-reveal", ""));
