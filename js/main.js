@@ -1,5 +1,33 @@
 document.documentElement.classList.add("js-enabled");
 
+const root = document.documentElement;
+const themeButton = document.querySelector(".theme-toggle");
+const themeColor = document.querySelector("#theme-color");
+const storedTheme = (() => {
+  try { return localStorage.getItem("portfolio-theme"); } catch { return null; }
+})();
+
+function applyTheme(theme, persist = false) {
+  const isLight = theme === "light";
+  root.dataset.theme = isLight ? "light" : "dark";
+  if (themeButton) {
+    const label = isLight ? "Ativar tema escuro" : "Ativar tema claro";
+    themeButton.setAttribute("aria-label", label);
+    themeButton.setAttribute("title", label);
+  }
+  if (themeColor) themeColor.setAttribute("content", isLight ? "#f8f5f0" : "#17131d");
+  if (persist) {
+    try { localStorage.setItem("portfolio-theme", isLight ? "light" : "dark"); } catch { /* armazenamento opcional */ }
+  }
+}
+
+applyTheme(storedTheme === "light" || storedTheme === "dark" ? storedTheme : "dark");
+if (themeButton) {
+  themeButton.addEventListener("click", () => {
+    applyTheme(root.dataset.theme === "light" ? "dark" : "light", true);
+  });
+}
+
 const menuButton = document.querySelector(".menu-toggle");
 const navigation = document.querySelector(".site-nav");
 
@@ -46,3 +74,4 @@ if ("IntersectionObserver" in window) {
 } else {
   revealItems.forEach((item) => item.classList.add("is-visible"));
 }
+
