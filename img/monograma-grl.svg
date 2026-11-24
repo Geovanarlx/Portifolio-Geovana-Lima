@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-labelledby="title desc">
+  <title id="title">Monograma GRL</title>
+  <desc id="desc">Monograma de Geovana Rogério Lima, com as iniciais G, R e L.</desc>
+  <circle cx="60" cy="60" r="55" fill="#211b29" stroke="#d4fa76" stroke-width="1.5" />
+  <circle cx="60" cy="60" r="47" fill="none" stroke="#f7f1e8" stroke-opacity=".16" />
+  <text x="14" y="81" fill="#f7f1e8" font-family="Georgia,serif" font-size="65" letter-spacing="-8">G</text>
+  <text x="70" y="48" fill="#ff91ba" font-family="Georgia,serif" font-size="25">R</text>
+  <path d="M75 58v24h23" fill="none" stroke="#d4fa76" stroke-linecap="square" stroke-width="3" />
+  <circle cx="94" cy="25" r="3.5" fill="#ff91ba" />
+  <path d="M17 98h86" stroke="#f7f1e8" stroke-opacity=".28" />
+  <text x="60" y="108" fill="#b9b1bf" font-family="monospace" font-size="5.5" letter-spacing="1.15" text-anchor="middle">GEOVANA ROGÉRIO LIMA</text>
+</svg>
+
